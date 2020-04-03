@@ -1,0 +1,27 @@
+private int get(Node x,int key) {
+        if (x == null) {
+            System.out.println("chave nao esta na abb");
+            return 1;
+        }else if(key == x.key){
+            return x.valor;
+            }else if(key < x.key){
+                    if(x.left == null){
+                        System.out.println("Chave nao esta na abb");
+                        return 1;
+            }       else{
+                        x = x.left;
+                        get(x,key);
+                    }
+            }else{
+                if(x.right == null){
+                    System.out.println("Chave nao esta na abb");
+                    return 1;
+                }else{
+                    x = x.right;
+                    get(x,key);
+                }
+            }
+        }
+
+
+        AM000724847LO
