@@ -12,7 +12,8 @@ tal estrutura fazem uso de chamadas recursivas.
 
 public class BinarySearchTree {
 
-    Node root;
+     Node root;
+
 
 
     //Classe node que representa os nos da arvore.
@@ -59,6 +60,12 @@ public class BinarySearchTree {
             }
         }
     }
+
+
+    public int root(Node root){
+        return root.key;
+    }
+
     //Metodo para adicionar um elemento na abb
     public void insert(int key){
         root = insert(root,key);
@@ -135,6 +142,70 @@ public class BinarySearchTree {
             root.right = deleterec(root.right,root.key);
         }
         return root;
+
+    }
+
+
+   /* Esse metodo eh responsavel por retornar a altura de um abb.
+    Recursivamente ele calcula as alturas dos filhos esquerdo e direito
+    de cada no,entao ele escolhe o maior e soma um para determinar a sua
+    altura.*/
+
+   public int bstHeight(){
+        return height(root);
+    }
+    private int height(Node root){
+        if(root == null) return 0;
+        else{
+            int lefheight = height(root.left);
+            int rightheight = height(root.right);
+
+            if(lefheight > rightheight){
+                return lefheight + 1;
+            }else return rightheight + 1;
+        }
+    }
+
+
+    /*Esse eh um metodo simples e ineficiente para testar se um dada
+    * arvore binaria eh uma arvore binaria de busca*/
+    public boolean isBst(Node root){
+       if(root == null) return true;
+       if(isSubTreeLesser(root.left,root.key) && isSubTreeGreater(root.right,root.key)
+       && isBst(root.left) && isBst(root.right)) return true;
+       else{
+           return false;
+       }
+    }
+
+    private boolean isSubTreeLesser(Node root,int value){
+       if(root == null) return true;
+       if((root.key <= value) &&
+           isSubTreeLesser(root.left,value) && isSubTreeLesser(root.right,value)){
+           return true;
+       }else return false;
+    }
+
+    private boolean isSubTreeGreater(Node root,int value){
+       if(root == null) return true;
+       if((root.key > value) && isSubTreeGreater(root.left,value) && isSubTreeGreater(root.right,value)){
+           return true;
+       }else return false;
+    }
+
+    /*Esse eh um metodo mais eficiente para o teste acima.
+    * Em vez de percorrer a arvore varias vezes para testar se os valores
+    * sao menores/maiores, ele testa cada no com os limites adequados*/
+
+    public boolean isBstFaster(){
+       return isBstUtil(root,Integer.MIN_VALUE,Integer.MAX_VALUE);
+    }
+    private boolean isBstUtil(Node root,int min,int max){
+       if(root == null) return true;
+
+       if(root.key < min || root.key > max) return false;
+
+       return (isBstUtil(root.left,min,root.key) && isBstUtil(root.right,root.key,max));
 
     }
 
