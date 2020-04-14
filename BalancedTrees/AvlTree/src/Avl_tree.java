@@ -135,6 +135,45 @@ public class Avl_tree {
     }
 
 
+    public int elementoMinimo(Node root){
+        if(root.left == null){
+            return root.key;
+        }else{
+            return elementoMinimo(root.left);
+        }
+    }
+
+
+
+
+
+    public Node delete(int key){
+       return  deleteUtil(root,key);
+    }
+
+    private Node deleteUtil(Node root,int key){
+        if(root == null) return null;
+        else if(root.key > key){
+            root.left = deleteUtil(root.left,key);
+        }else if(root.key < key){
+            root.right = deleteUtil(root.right,key);
+        }else{
+            if(root.left == null) {
+                return root.right;
+            } else if(root.right == null) {
+                return root.left;
+            }
+            root.key = elementoMinimo(root.right);
+            root.right = deleteUtil(root.right,root.key);
+
+        }
+        if(root != null){
+            root = rebalance(root);
+        }
+        return root;
+    }
+
+
 
 
 
