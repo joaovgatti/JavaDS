@@ -1,7 +1,6 @@
 public class Selection {
 
-
-    public void selectionsort(int lista[]){
+    public void selectionsort(int[] lista){
         int n = lista.length;
         for(int i=0;i<n-1;i++){
             int min = i;
