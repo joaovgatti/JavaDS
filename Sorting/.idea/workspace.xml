@@ -25,6 +25,7 @@
       <change beforePath="$PROJECT_DIR$/../BinarySearchTree/out/production/BinarySearchTree/BinarySearchTree.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../BinarySearchTree/out/production/BinarySearchTree/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sorting/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sorting/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +93,8 @@
       <option name="presentableId" value="Default" />
       <updated>1589222617753</updated>
       <workItem from="1589798775548" duration="8554000" />
-      <workItem from="1589896788255" duration="3052000" />
+      <workItem from="1589896788255" duration="7426000" />
+      <workItem from="1589914714626" duration="167000" />
     </task>
     <servers />
   </component>
@@ -116,29 +118,34 @@
       <screen x="65" y="24" width="2495" height="1056" />
     </state>
     <state x="777" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.0.1920.1080/65.24.2495.1056@65.24.2495.1056" timestamp="1589799205708" />
-    <state x="1100" y="297" key="FileChooserDialogImpl" timestamp="1589812128804">
+    <state x="1100" y="297" key="FileChooserDialogImpl" timestamp="1589914874318">
       <screen x="65" y="24" width="2495" height="1056" />
     </state>
     <state x="1100" y="297" key="FileChooserDialogImpl/2560.0.1920.1080/65.24.2495.1056@2560.0.1920.1080" timestamp="1589812128804" />
-    <state width="1242" height="202" key="GridCell.Tab.0.bottom" timestamp="1589899984318">
+    <state x="1100" y="297" key="FileChooserDialogImpl/2560.0.1920.1080/65.24.2495.1056@65.24.2495.1056" timestamp="1589914874318" />
+    <state width="2449" height="164" key="GridCell.Tab.0.bottom" timestamp="1589913316003">
       <screen x="65" y="24" width="2495" height="1056" />
     </state>
-    <state width="1242" height="202" key="GridCell.Tab.0.bottom/2560.0.1920.1080/65.24.2495.1056@65.24.2495.1056" timestamp="1589899984318" />
-    <state width="1242" height="202" key="GridCell.Tab.0.center" timestamp="1589899984318">
+    <state width="2449" height="164" key="GridCell.Tab.0.bottom/2560.0.1920.1080/65.24.2495.1056@65.24.2495.1056" timestamp="1589913316003" />
+    <state width="2449" height="164" key="GridCell.Tab.0.center" timestamp="1589913316003">
       <screen x="65" y="24" width="2495" height="1056" />
     </state>
-    <state width="1242" height="202" key="GridCell.Tab.0.center/2560.0.1920.1080/65.24.2495.1056@65.24.2495.1056" timestamp="1589899984318" />
-    <state width="1242" height="202" key="GridCell.Tab.0.left" timestamp="1589899984318">
+    <state width="2449" height="164" key="GridCell.Tab.0.center/2560.0.1920.1080/65.24.2495.1056@65.24.2495.1056" timestamp="1589913316003" />
+    <state width="2449" height="164" key="GridCell.Tab.0.left" timestamp="1589913316003">
       <screen x="65" y="24" width="2495" height="1056" />
     </state>
-    <state width="1242" height="202" key="GridCell.Tab.0.left/2560.0.1920.1080/65.24.2495.1056@65.24.2495.1056" timestamp="1589899984318" />
-    <state width="1242" height="202" key="GridCell.Tab.0.right" timestamp="1589899984318">
+    <state width="2449" height="164" key="GridCell.Tab.0.left/2560.0.1920.1080/65.24.2495.1056@65.24.2495.1056" timestamp="1589913316003" />
+    <state width="2449" height="164" key="GridCell.Tab.0.right" timestamp="1589913316003">
       <screen x="65" y="24" width="2495" height="1056" />
     </state>
-    <state width="1242" height="202" key="GridCell.Tab.0.right/2560.0.1920.1080/65.24.2495.1056@65.24.2495.1056" timestamp="1589899984318" />
+    <state width="2449" height="164" key="GridCell.Tab.0.right/2560.0.1920.1080/65.24.2495.1056@65.24.2495.1056" timestamp="1589913316003" />
     <state x="806" y="174" key="SettingsEditor" timestamp="1589799172211">
       <screen x="65" y="24" width="2495" height="1056" />
     </state>
     <state x="806" y="174" key="SettingsEditor/2560.0.1920.1080/65.24.2495.1056@65.24.2495.1056" timestamp="1589799172211" />
+    <state x="625" y="103" width="1372" height="869" key="new project wizard" timestamp="1589914878006">
+      <screen x="65" y="24" width="2495" height="1056" />
+    </state>
+    <state x="625" y="103" width="1372" height="869" key="new project wizard/2560.0.1920.1080/65.24.2495.1056@65.24.2495.1056" timestamp="1589914878006" />
   </component>
 </project>
