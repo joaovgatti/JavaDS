@@ -34,15 +34,21 @@ public class Graph {
         boolean visited[] = new boolean[this.v];
         //criacao da fila onde se add os vizinhos do atual vertice
         Queue<Integer> queue = new LinkedList<>();
+	//visita o vertice
         visited[s] = true;
+	//add na fila o vertice
         queue.add(s);
         //quando a fila estiver vazia o algoritmo visitou todos os vertices
         while(!queue.isEmpty()){
+	    //printa o vertice e o tira da fila
             s = queue.poll();
             System.out.println(s + " ");
+	    //add todos vizinhos(nao visitados) do vertice na fila	
             for (int item : adjList[s]){
                 if(!visited[item]){
+	            //visita os vizinhos que ainda nao foram visitados		
                     visited[item] = true;
+		    //add na fila
                     queue.add(item);
                 }
             }
