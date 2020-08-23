@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2838b86f-b43f-4710-9931-344565eaabeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Queue/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Queue/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,6 +72,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -92,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585571219150</updated>
-      <workItem from="1598214917339" duration="1256000" />
+      <workItem from="1598214917339" duration="1652000" />
     </task>
     <servers />
   </component>
@@ -109,5 +117,23 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1234" height="259" key="GridCell.Tab.0.bottom" timestamp="1598216679121">
+      <screen x="0" y="24" width="2560" height="1056" />
+    </state>
+    <state width="1234" height="259" key="GridCell.Tab.0.bottom/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598216679121" />
+    <state width="1234" height="259" key="GridCell.Tab.0.center" timestamp="1598216679121">
+      <screen x="0" y="24" width="2560" height="1056" />
+    </state>
+    <state width="1234" height="259" key="GridCell.Tab.0.center/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598216679121" />
+    <state width="1234" height="259" key="GridCell.Tab.0.left" timestamp="1598216679121">
+      <screen x="0" y="24" width="2560" height="1056" />
+    </state>
+    <state width="1234" height="259" key="GridCell.Tab.0.left/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598216679121" />
+    <state width="1234" height="259" key="GridCell.Tab.0.right" timestamp="1598216679121">
+      <screen x="0" y="24" width="2560" height="1056" />
+    </state>
+    <state width="1234" height="259" key="GridCell.Tab.0.right/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598216679121" />
   </component>
 </project>

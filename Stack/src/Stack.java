@@ -27,10 +27,14 @@ public class Stack {
      */
     public void push(int data){
         Node temp = new Node(data);
-        if (!this.isEmpty()) {
-            head.next = temp;
+        if(this.isEmpty()) {
+            head = temp;
+        }else{
+           temp.next = head;
+           head = temp;
         }
-        head = temp;
+
+
     }
 
     /**
