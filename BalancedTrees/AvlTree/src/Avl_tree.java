@@ -1,77 +1,100 @@
-/*Essa eh uma implementacao de uma arvore binaria de busca balanceada do tipo AVL
-* Arvores AVL sao aquelas que para qualquer no da arvore a diferenca entre a
-* altura das subarvores direita e esquerda eh de no maximo uma unidade.
-* Assim,essa arvore mantem o custo de acesso de uma abb otima ( O(log N))
-* Para manter essa diferenca sao necessarias operacoes de rotacoes para
-* fazer o balanceamento da arvore apos insercoes e remocoes.*/
-
-
-
-
-
+/*
+    This is the implementation of the Dictionary ADT using an AVL BST.
+    Avl tree is a balanced bst - the difference of heights between the left and right
+    subtree is no greater than one, for every node in the Tree. This property guarantee
+    that basic operations takes O(log n).
+ */
 public class Avl_tree {
 
+
+    /**
+     * This is a nested class for representing a Node Object.
+     */
     class Node{
         int key;
         int height;
         Node left,right;
 
-
         public Node(int key){
             this.key = key;
-            //this.height = 1;
+
         }
     }
 
      Node root;
 
 
-    //Esse metodo calcula a altura de um no
+    /**
+     *
+     * @param n -> A Node n.
+     * This method updates the height of a Node.
+     */
     void updateHeight(Node n) {
-        n.height = 1 + Math.max(height(n.left), height(n.right));
+        n.height = 1 + Math.max(getHeight(n.left), getHeight(n.right));
     }
 
-    //Get para altura
-    int height(Node temp){
+    /**
+     *
+     * @param temp -> A node Temp
+     * @return the height of a node.
+     */
+    int getHeight(Node temp){
         return (temp == null) ? -1 : temp.height;
     }
 
-    //Esse metodo eh responsavel para calcular o fator de balanceamento de um no
+    /**
+     *
+     * @param temp -> A node temp
+     * @return  the the balance factor.
+     */
     int getBalance(Node temp){
-        return (temp == null) ? 0 : height(temp.right) - height(temp.left);
+        return (temp == null) ? 0 : getHeight(temp.right) - getHeight(temp.left);
     }
 
-    //Metodo responsavel por fazer a rotacao direita de um no
-    //Nao eh a operacao de balanceamento, so de rotacao
-    Node rightRot(Node y){
-        Node x = y.left;
+    /**
+     *
+     * @param temp -> A node temp
+     * @return right rotation.
+     * This method is responsible for doing a right rotation.
+     */
+    Node rightRot(Node temp){
+        Node x = temp.left;
         Node z = x.right;
 
-        x.right = y;
-        y.left = z;
+        x.right = temp;
+        temp.left = z;
 
-        updateHeight(y);
+        updateHeight(temp);
         updateHeight(x);
 
         return x;
     }
 
-    //Metodo responsavel por fazer a rotacao esquerda de um no
-    //Nao eh a operacao de balanceamento, so de rotacao
-    Node leftRot(Node y){
-        Node x = y.right;
+    /**
+     *
+     * @param temp -> A node temp
+     * @return left rotation.
+     * This method is responsible for doing a left rotation.
+     */
+    Node leftRot(Node temp){
+        Node x = temp.right;
         Node z = x.left;
 
-        x.left = y;
-        y.right = z;
+        x.left = temp;
+        temp.right = z;
 
-        updateHeight(y);
+        updateHeight(temp);
         updateHeight(x);
 
         return x;
     }
 
-    //Esse eh o metodo para realizar o balanceamento de um no desbalenceado.
+    /**
+     *
+     * @param z -> A node Z
+     * @return z rebalanced.
+     * This method uses the leftRotation e rightRotation to rebalance a Node.
+     */
     Node rebalance(Node z){
         updateHeight(z);
         int balance = getBalance(z);
@@ -79,7 +102,7 @@ public class Avl_tree {
         //a subarvore direita do no z eh maior que a subarvore esquerda
         if(balance > 1){
             //linha reta na sucessao
-            if(height(z.right.right) > height(z.right.left)){
+            if(getHeight(z.right.right) > getHeight(z.right.left)){
                 z = leftRot(z);
             //linha torta
             }else{
@@ -90,7 +113,7 @@ public class Avl_tree {
         // a subavore esquerda eh maior que a subarvore direita
         }else if(balance < -1){
             //linha reta
-            if(height(z.left.left) > height(z.left.right)){
+            if(getHeight(z.left.left) > getHeight(z.left.right)){
                 z = rightRot(z);
             }else{//linha torta
                 z.left = leftRot(z.left);
@@ -101,9 +124,11 @@ public class Avl_tree {
     }
 
 
-    //Funcao para inserir um no
-    //Funciona como uma insercao normal
-    //com o balanceamento
+    /**
+     *
+     * @param key to be add.
+     * This method add an element in the bst, using the rebalance method.
+     */
     public void insert(int key){
         root = insert(root,key);
     }
@@ -125,16 +150,24 @@ public class Avl_tree {
     }
 
 
-    //melhor percurso para ver as rotacoes
-    void preOrder(Node node) {
-        if (node != null) {
-            System.out.print(node.key + " ");
-            preOrder(node.left);
-            preOrder(node.right);
+    /**
+     *
+     * @param temp -> A node temp.
+     * PreOrder traversals in the tree.
+     */
+    void preOrder(Node temp) {
+        if (temp != null) {
+            System.out.print(temp.key + " ");
+            preOrder(temp.left);
+            preOrder(temp.right);
         }
     }
 
-
+    /**
+     *
+     * @param root -> Node root.
+     * @return the minimum element of the subtree with Root root.
+     */
     public int elementoMinimo(Node root){
         if(root.left == null){
             return root.key;
@@ -144,9 +177,11 @@ public class Avl_tree {
     }
 
 
-
-
-
+    /**
+     *
+     * @param key to be Deleted.
+     * @return the node deleted.
+     */
     public Node delete(int key){
        return  deleteUtil(root,key);
     }
