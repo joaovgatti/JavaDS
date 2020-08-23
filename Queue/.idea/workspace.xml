@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47472bab-ad57-4ff8-b34d-c15dc87bbbf8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Queue.java" afterDir="false" />
-    </list>
+    <list default="true" id="47472bab-ad57-4ff8-b34d-c15dc87bbbf8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +52,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585682178389" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Stack" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -95,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585657171546</updated>
-      <workItem from="1598213109813" duration="1739000" />
+      <workItem from="1598213109813" duration="1807000" />
     </task>
     <servers />
   </component>
@@ -112,6 +110,28 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1068" y="297" key="FileChooserDialogImpl" timestamp="1598214914368">
+      <screen x="0" y="24" width="2560" height="1056" />
+    </state>
+    <state x="1068" y="297" key="FileChooserDialogImpl/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598214914368" />
+    <state width="2514" height="271" key="GridCell.Tab.0.bottom" timestamp="1598214918111">
+      <screen x="0" y="24" width="2560" height="1056" />
+    </state>
+    <state width="2514" height="271" key="GridCell.Tab.0.bottom/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598214918111" />
+    <state width="2514" height="271" key="GridCell.Tab.0.center" timestamp="1598214918111">
+      <screen x="0" y="24" width="2560" height="1056" />
+    </state>
+    <state width="2514" height="271" key="GridCell.Tab.0.center/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598214918111" />
+    <state width="2514" height="271" key="GridCell.Tab.0.left" timestamp="1598214918111">
+      <screen x="0" y="24" width="2560" height="1056" />
+    </state>
+    <state width="2514" height="271" key="GridCell.Tab.0.left/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598214918111" />
+    <state width="2514" height="271" key="GridCell.Tab.0.right" timestamp="1598214918111">
+      <screen x="0" y="24" width="2560" height="1056" />
+    </state>
+    <state width="2514" height="271" key="GridCell.Tab.0.right/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598214918111" />
   </component>
   <component name="masterDetails">
     <states>
