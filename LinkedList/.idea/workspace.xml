@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="196abff3-31c6-444a-97ee-762cb15dd92b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList.java" afterDir="false" />
-    </list>
+    <list default="true" id="196abff3-31c6-444a-97ee-762cb15dd92b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +52,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585148376992" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Queue" />
     <property name="settings.editor.selected.configurable" value="copyright.profiles" />
   </component>
   <component name="RunManager">
@@ -85,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585136767275</updated>
-      <workItem from="1598211887405" duration="1081000" />
+      <workItem from="1598211887405" duration="1222000" />
     </task>
     <servers />
   </component>
@@ -104,6 +98,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="1708" y="282" key="FileChooserDialogImpl" timestamp="1598213106674">
+      <screen x="0" y="24" width="2560" height="1056" />
+    </state>
+    <state x="1708" y="282" key="FileChooserDialogImpl/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598213106674" />
     <state x="1414" y="159" key="SettingsEditor" timestamp="1598212349406">
       <screen x="0" y="24" width="2560" height="1056" />
     </state>
