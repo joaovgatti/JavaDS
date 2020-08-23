@@ -36,7 +36,7 @@ public class Queue {
      * @param data representing the value you want to add in the queue.
      *         This method add a new element in the queue as the last element of the queue.
      *         Remember, queue is a FirstInFirstOut data structure.
-     *         Runs in O(n).
+     *         Runs in O(1).
      *
      */
     public void enqueue(int data){
@@ -53,7 +53,7 @@ public class Queue {
 
     /**
      * This method remove the first element of the Queue.
-     * Runs in O(n).
+     * Runs in O(1).
      */
     public void dequeue(){
         if(this.isEmpty()){
