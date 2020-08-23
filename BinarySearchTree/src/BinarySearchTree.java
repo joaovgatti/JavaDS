@@ -1,79 +1,94 @@
-/*Essa classe eh a responsavel por implementar uma arvore binaria de busca.
-Tal implementacao se baseia numa lista encadeada formada por diversos nos,
-onde cada no eh formado por uma chave,e uma referencia para cada filho do no(
-direito e esquerdo).
+/**
+ This is the implementation of the Dictionary ADT using a Binary Search Tree.
+By the definition of an BST, a lot of the methods here uses recursive calls.
 
-Pela propria definicao de um arvore binaria de busca,os metodos basicos para operar
-tal estrutura fazem uso de chamadas recursivas.
+@author João Vitor Gatti teixeira, joaogatti17@gmail.com
 
 * */
 
-
-
 public class BinarySearchTree {
 
-     Node root;
-
-
-
-    //Classe node que representa os nos da arvore.
+    /**
+     * This is a nested class representing the nodes of a BST.
+     */
     private class Node {
         private int key;
+        private int info;
         private Node left, right;
-
         public Node(int key){
             this.key = key;
         }
-
+        public Node(int key,int info){
+            this.key = key;
+            this.info = info;
+        }
     }
 
-    //Metodo para buscar um no na arvore.
+    private Node root;
+
+    /**
+     *
+     * @param key -> is the key to be found in the bst.
+     * @return -> if the search is successful returns the value associated with the given key,
+     * if the search in not successful returns -1.
+     * This method implements the classic search in a BST.
+     * Runs in O(log n)/O(n).
+     */
     public int get(int key) {
         return get(root, key);
     }
-    private int get(Node x, int key) {
-        if(x == null){
-            System.out.println("abb nao existe");
-            return 0;
+    private int get(Node root, int key) {
+        if(root == null){
+            System.out.println("BST is empty.");
+            return -1;
         }else{
-            if(key == x.key){
-                System.out.println("chave encontrada");
-                return x.key;
+            if(key == root.key){
+                System.out.println("key Found.");
+                return root.info;
             }else{
-                if(key < x.key){
-                    if(x.left == null){
-                        System.out.println("chave nao esta na abb");
-                        return 0;
+                if(key < root.key){
+                    if(root.left == null){
+                        System.out.println("The key is not in the BST.");
+                        return -1;
                     }else{
-                        x = x.left;
-                        return get(x,key);
+                        root = root.left;
+                        return get(root,key);
                     }
                 }else{
-                    if(x.right == null){
-                        System.out.println("chave nao esta na abb");
-                        return 0;
+                    if(root.right == null){
+                        System.out.println("The Key is not in the BST.");
+                        return -1;
                     }else{
-                        x = x.right;
-                        return get(x,key);
+                        root = root.right;
+                        return get(root,key);
                     }
                 }
             }
         }
     }
 
-
-    public int root(Node root){
-        return root.key;
+    /**
+     *
+     *
+     * @return the root key of the BST.
+     * Runs in O(1).
+     */
+    public Node root(){
+        return this.root;
     }
 
-    //Metodo para adicionar um elemento na abb
+    /**
+     *
+     * @param key -> the key to be add in the BST.
+     *  This method adds a new element in the bst.
+     *   Runs in O(log n)/O(n).
+     */
     public void insert(int key){
         root = insert(root,key);
     }
     private Node insert(Node root,int key){
         if(root == null){
             root = new Node(key);
-            return root;
         }else{
             if(root.key > key){
                 root.left = insert(root.left,key);
@@ -87,71 +102,75 @@ public class BinarySearchTree {
         return root;
     }
 
-    //Metodo que retorna o elemento de menor chave
+    /**
+     *
+     * @param root of the BST.
+     * @return the minimum element key in the bst.
+     * Runs in O(n)/O(log n).
+     */
     public int elementoMinimo(Node root){
-        return min(root).key;
+        if(root.left == null) return root.key;
+        return elementoMinimo(root.left);
     }
 
-    private Node min(Node x){
-        if(x.left == null) return x;
-        return min(x.left);
+    /**
+     *
+     * @param root of the BST.
+     * @return the maximum element key in the bst.
+     * Runs in O(n)/O(log n).
+     */
+    public int elementoMaximo(Node root){
+       if(root.right == null) return root.key;
+       return elementoMaximo(root.right);
     }
 
-    public int elementoMaximo(){
-        return max(root).key;
-    }
 
-    private Node max(Node x){
-        if(x.right == null) return x;
-        return max(x.right);
-    }
-
-    //percurso na arvore
-    public void Inorder(){
-        Inorder(root);
-    }
-    private void Inorder(Node root){
+    /**
+     *
+     * @param root of the BST.
+     *  This method is the classic InOrder traversal in a bst.
+     *  Runs in O(n).
+     */
+    public void InOrder(Node root){
         if(root != null){
-            Inorder(root.left);
+            InOrder(root.left);
             System.out.println(root.key);
-            Inorder(root.right);
+            InOrder(root.right);
         }
     }
 
-    //metodo para deletar um no de forma que a abb
-    //continue uma abb
+    /**
+     *
+     * @param key -> The key associated with the node we want delete.
+     * This method deletes a Node in the bst.
+     */
     public void delete(int key){
-        root  = deleterec(root,key);
-
+        root  = deleteAux(root,key);
     }
-    private Node deleterec(Node root,int key){
+    private Node deleteAux(Node root,int key){
         if(root == null) return null;
         if(root.key > key){
-            root.left = deleterec(root.left,key);
+            root.left = deleteAux(root.left,key);
         }
         else if(root.key < key){
-            root.right = deleterec(root.right,key);
+            root.right = deleteAux(root.right,key);
         }else{
             if(root.left == null){
                 return root.right;
             }else if(root.right == null){
                 return root.left;
             }
-
             root.key = elementoMinimo(root.right);
-            root.right = deleterec(root.right,root.key);
+            root.right = deleteAux(root.right,root.key);
         }
         return root;
-
     }
 
-
-   /* Esse metodo eh responsavel por retornar a altura de um abb.
-    Recursivamente ele calcula as alturas dos filhos esquerdo e direito
-    de cada no,entao ele escolhe o maior e soma um para determinar a sua
-    altura.*/
-
-   public int bstHeight(){
+    /**
+     *
+     * @return the height of the bst.
+     */
+    public int bstHeight(){
         return height(root);
     }
     private int height(Node root){
@@ -165,50 +184,4 @@ public class BinarySearchTree {
             }else return rightheight + 1;
         }
     }
-
-
-    /*Esse eh um metodo simples e ineficiente para testar se um dada
-    * arvore binaria eh uma arvore binaria de busca*/
-    public boolean isBst(Node root){
-       if(root == null) return true;
-       if(isSubTreeLesser(root.left,root.key) && isSubTreeGreater(root.right,root.key)
-       && isBst(root.left) && isBst(root.right)) return true;
-       else{
-           return false;
-       }
-    }
-
-    private boolean isSubTreeLesser(Node root,int value){
-       if(root == null) return true;
-       if((root.key <= value) &&
-           isSubTreeLesser(root.left,value) && isSubTreeLesser(root.right,value)){
-           return true;
-       }else return false;
-    }
-
-    private boolean isSubTreeGreater(Node root,int value){
-       if(root == null) return true;
-       if((root.key > value) && isSubTreeGreater(root.left,value) && isSubTreeGreater(root.right,value)){
-           return true;
-       }else return false;
-    }
-
-    /*Esse eh um metodo mais eficiente para o teste acima.
-    * Em vez de percorrer a arvore varias vezes para testar se os valores
-    * sao menores/maiores, ele testa cada no com os limites adequados*/
-
-    public boolean isBstFaster(){
-       return isBstUtil(root,Integer.MIN_VALUE,Integer.MAX_VALUE);
-    }
-    private boolean isBstUtil(Node root,int min,int max){
-       if(root == null) return true;
-
-       if(root.key < min || root.key > max) return false;
-
-       return (isBstUtil(root.left,min,root.key) && isBstUtil(root.right,root.key,max));
-
-    }
-
-
-
 }
