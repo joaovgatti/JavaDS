@@ -1,4 +1,10 @@
-import java.util.Iterator;
+/**
+ * This is the implementation of the famous Breadth First Search algorithm.
+ * The algorithm traversals the graph in a levels fashion.
+ * Runs in O(V+E).
+ * @author João Vitor Gatti Teixeira, joaogatti17@gmail.com
+ */
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -9,7 +15,12 @@ public class Graph {
     //array de LinkedList representando a lista de adjacencias
     private LinkedList<Integer>[] adjList;
 
-    //Setando o grafo
+    /**
+     *
+     * @param v is the number of vertices in the graph.
+     *  Note that the underlying data structure is an array of linkedList. Its the
+     *  adjacency list graph representation.
+     */
     public Graph(int v){
         this.v= v;
         adjList = new LinkedList[v];
@@ -18,37 +29,34 @@ public class Graph {
         }
     }
 
-    //Adicionado as arestas entre os vertices
-    //Como G nao eh direcionado eh necessario
-    //add nas duas listas dos vertices
+    /**
+     *
+     * @param v the vertice V
+     * @param w the vertice W
+     * This method adds an edge between two vertices. Its a two-way street because
+     *  the graph is not directed.
+     */
     public void addEdge(int v,int w){
         adjList[v].add(w);
         adjList[w].add(v);
 
     }
 
-    //Nossa BuscaPorLargura
+    /**
+     *
+     * @param s the vertice the algorithm will begin. It can be any.
+     */
     public void breathFirstSearch(int s){
-        //Array de boolean para impedir que o algoritmo
-        //percorra vertices ja visitados
         boolean visited[] = new boolean[this.v];
-        //criacao da fila onde se add os vizinhos do atual vertice
         Queue<Integer> queue = new LinkedList<>();
-	//visita o vertice
         visited[s] = true;
-	//add na fila o vertice
         queue.add(s);
-        //quando a fila estiver vazia o algoritmo visitou todos os vertices
         while(!queue.isEmpty()){
-	    //printa o vertice e o tira da fila
             s = queue.poll();
             System.out.println(s + " ");
-	    //add todos vizinhos(nao visitados) do vertice na fila	
             for (int item : adjList[s]){
                 if(!visited[item]){
-	            //visita os vizinhos que ainda nao foram visitados		
                     visited[item] = true;
-		    //add na fila
                     queue.add(item);
                 }
             }
@@ -73,12 +81,7 @@ public class Graph {
         g.addEdge(8,9);
         g.addEdge(9,10);
 
-        System.out.println("Following is Breadth First Traversal " + "(starting from vertex 100)");
+        System.out.println("Graph Traversal:  " + "(starting from vertex 0)");
         g.breathFirstSearch(0);
     }
-
-
-
-
-
 }
