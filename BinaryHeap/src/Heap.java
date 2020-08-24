@@ -1,19 +1,20 @@
-/*
-Implementacao maxHeap de um heap binario.
-Um heap pode ser visto como um arvore binaria completa onde (maxheap) cada
-no eh maior que os seus filhos e assim recursivamente.Logo nesse caso
-a raiz eh o maior elemento.
-*/
+/**
+This class implements the Priority Queue ADT with a Binary Heap.
+ @author João Vitor Gatti Teixeira, joaogatti17@gmail.com
+**/
 
 public class Heap {
 
-    int[] heap;
-    //maior tamanho possivel do array
-    int maxsize;
-    //tamanho do array conforme adiciona-se elementos
-    int size;
+    private int[] heap;
 
+    private int maxsize;
 
+    private int size;
+
+    /**
+     *
+     * @param maxsize -> tamanho do array.
+     */
     public Heap(int maxsize){
         this.maxsize = maxsize;
         heap = new int[this.maxsize + 1];
@@ -22,21 +23,40 @@ public class Heap {
         heap[0] = Integer.MAX_VALUE;
     }
 
-    //retorna a posicao do pai do no da posicao position
+    /**
+     *
+     * @param position of the current element.
+     * @return  a posicao do pai do no da posicao position
+     */
     private int parent(int position){
         return (position / 2);
     }
-    //retorna a posicao do filho esquerdo do no da posicao position
+
+    /**
+     *
+     * @param position of the current element.
+     * @return the position of the left child.
+     */
     private int leftChild(int position){
         return (2*position);
     }
-    //retorna a posicao do filho direito do no da posicao position
+
+    /**
+     *
+     * @param position of the current element.
+     * @return the position of the left child.
+     */
     private int rightChild(int position){
         return ((2*position) + 1);
     }
 
-    //Esse metodo troca de valores dois nos, onde o no de maior valor
-    //vai antes do de menor valor
+
+    /**
+     *
+     * @param firstPosition to swap
+     * @param secondPosition to swaṕ
+     * This method simply changes the values of two given nodes.
+     */
     private void swap(int firstPosition,int secondPosition){
         int temp;
         temp = heap[firstPosition];
@@ -44,10 +64,12 @@ public class Heap {
         heap[secondPosition] = temp;
     }
 
-
-    //esse metodo eh responsavel por "balancear" a arvore,isto e,
-    //dado um no ele ve se eh maior do q seus filhos,em caso negativo
-    //realiza as operacoes apropriadas para se "balancear"
+    /**
+     *
+     * @param position to Start the maxHeapify.
+     * This method is responsable for "balance" the tree,
+     * check if a node is bigger than his sons.
+     */
     private void maxHeapify(int position){
         int largest;
         int leftSon = leftChild(position);
@@ -66,7 +88,11 @@ public class Heap {
         }
     }
 
-    //metodo para adicionar um elemento
+    /**
+     *
+     * @param element to be Inserted.
+     * This method inserts an element in the heap.
+     */
     public void insert(int element){
         heap[++size] = element;
         int current = size;
@@ -76,8 +102,10 @@ public class Heap {
         }
     }
 
-    //responsavel por retornar o maior valor,
-    //ou seja,a raiz heap[1]
+    /**
+     *
+     * @return the max value in the heap, which is the root.
+     */
     public int extractMax(){
         int popped = heap[1];
         heap[1] = heap[size--];
@@ -85,6 +113,9 @@ public class Heap {
         return popped;
     }
 
+    /**
+     * Print the array representing the heap.
+     */
     public void print(){
         for(int i=1;i<=size/2;i++){
             System.out.println("parent: " + heap[i] + "left child: " + heap[leftChild(i)] + "right child : "

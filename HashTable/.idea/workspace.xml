@@ -20,12 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e01a5100-c68e-4fd8-a0a5-972336626ac9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BalancedTrees/AvlTree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BalancedTrees/AvlTree/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +54,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587580042912" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BinaryHeap" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -100,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587377585839</updated>
-      <workItem from="1598268648072" duration="3022000" />
+      <workItem from="1598268648072" duration="3800000" />
     </task>
     <servers />
   </component>
@@ -119,22 +115,26 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1374" height="357" key="GridCell.Tab.0.bottom" timestamp="1598270798300">
+    <state x="1068" y="297" key="FileChooserDialogImpl" timestamp="1598272444781">
       <screen x="0" y="24" width="2560" height="1056" />
     </state>
-    <state width="1374" height="357" key="GridCell.Tab.0.bottom/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598270798300" />
-    <state width="1374" height="357" key="GridCell.Tab.0.center" timestamp="1598270798300">
+    <state x="1068" y="297" key="FileChooserDialogImpl/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598272444781" />
+    <state width="1374" height="309" key="GridCell.Tab.0.bottom" timestamp="1598272448803">
       <screen x="0" y="24" width="2560" height="1056" />
     </state>
-    <state width="1374" height="357" key="GridCell.Tab.0.center/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598270798300" />
-    <state width="1374" height="357" key="GridCell.Tab.0.left" timestamp="1598270798300">
+    <state width="1374" height="309" key="GridCell.Tab.0.bottom/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598272448803" />
+    <state width="1374" height="309" key="GridCell.Tab.0.center" timestamp="1598272448803">
       <screen x="0" y="24" width="2560" height="1056" />
     </state>
-    <state width="1374" height="357" key="GridCell.Tab.0.left/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598270798300" />
-    <state width="1374" height="357" key="GridCell.Tab.0.right" timestamp="1598270798300">
+    <state width="1374" height="309" key="GridCell.Tab.0.center/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598272448803" />
+    <state width="1374" height="309" key="GridCell.Tab.0.left" timestamp="1598272448803">
       <screen x="0" y="24" width="2560" height="1056" />
     </state>
-    <state width="1374" height="357" key="GridCell.Tab.0.right/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598270798300" />
+    <state width="1374" height="309" key="GridCell.Tab.0.left/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598272448803" />
+    <state width="1374" height="309" key="GridCell.Tab.0.right" timestamp="1598272448803">
+      <screen x="0" y="24" width="2560" height="1056" />
+    </state>
+    <state width="1374" height="309" key="GridCell.Tab.0.right/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598272448803" />
   </component>
   <component name="masterDetails">
     <states>
