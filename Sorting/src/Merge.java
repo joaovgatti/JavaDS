@@ -1,6 +1,18 @@
+/**
+ * This is the implementation of the Mergesort algorithm.
+ * Mergesort is a optimal divide-and-conquer algorithm that runs in O(n * log n).
+ * @author João Vitor Gatti Teixeira, joaogatti17@gmail.com
+ */
+
+
+
+
 public class Merge {
 
-
+    /**
+     *
+     * @param arr is the array we want to order.
+     */
     public void mergeSort(int arr[]){
 
         if(arr.length > 1){
@@ -21,6 +33,15 @@ public class Merge {
 
     }
 
+    /**
+     *
+     * @param l an ordered array.
+     * @param r an ordered array.
+     * @param a the array merged.
+     * This method is responsible for given two ordered arrays,merges them in a new
+     * sorted array.
+     *
+     */
         private void merge(int[] l,int[] r,int[] a){
         int i = 0;
         int j = 0;
@@ -47,6 +68,11 @@ public class Merge {
         }
     }
 
+    /**
+     *
+     * @param arr to be printed.
+     * This method just print the array.
+     */
     public void printlist(int[] arr){
         for(int i=0;i<arr.length;i++){
             System.out.println(arr[i]+ " ");
