@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4db2ca1-7010-4e9b-a138-dd93a8d0b168" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Avl_tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avl_tree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BinarySearchTree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BinarySearchTree/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +54,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586892168643" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../HashTable" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -67,17 +63,6 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="AvlTree" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -99,7 +84,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586781796182</updated>
-      <workItem from="1598223811019" duration="1238000" />
+      <workItem from="1598223811019" duration="2507000" />
+      <workItem from="1598268619237" duration="27000" />
     </task>
     <servers />
   </component>
@@ -116,6 +102,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1068" y="297" key="FileChooserDialogImpl" timestamp="1598268644858">
+      <screen x="0" y="24" width="2560" height="1056" />
+    </state>
+    <state x="1068" y="297" key="FileChooserDialogImpl/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598268644858" />
+    <state x="593" y="140" width="1372" height="794" key="new project wizard" timestamp="1598268637400">
+      <screen x="0" y="24" width="2560" height="1056" />
+    </state>
+    <state x="593" y="140" width="1372" height="794" key="new project wizard/0.24.2560.1056/2560.0.1920.1080@0.24.2560.1056" timestamp="1598268637400" />
   </component>
   <component name="masterDetails">
     <states>

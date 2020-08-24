@@ -1,13 +1,17 @@
 public class Main {
 
     public static void main(String[] args){
-        HashTable<Integer,String> map = new HashTable<>();
-        map.add(20,"fuck");
-        map.add(50,"john");
-        map.add(90,"hello");
-        map.delete((90));
-        map.delete(20);
-        System.out.println(map.getValue(20));
-        System.out.println(map.getSize());
+        HashTable table = new HashTable();
+        table.add(1,10);
+        table.add(2,20);
+        table.add(3,30);
+        table.add(4,40);
+        table.add(12,200);
+        table.add(13,300);
+        table.add(5,50);
+        table.add(15,500);
+        table.delete(4);
+
+        System.out.println(table.getValueByKey(4));
     }
 }
