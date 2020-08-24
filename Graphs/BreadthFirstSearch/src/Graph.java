@@ -46,7 +46,7 @@ public class Graph {
      *
      * @param s the vertice the algorithm will begin. It can be any.
      */
-    public void breathFirstSearch(int s){
+    public void breadthFirstSearch(int s){
         boolean visited[] = new boolean[this.v];
         Queue<Integer> queue = new LinkedList<>();
         visited[s] = true;
@@ -82,6 +82,6 @@ public class Graph {
         g.addEdge(9,10);
 
         System.out.println("Graph Traversal:  " + "(starting from vertex 0)");
-        g.breathFirstSearch(0);
+        g.breadthFirstSearch(0);
     }
 }
